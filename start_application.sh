@@ -1,3 +1,4 @@
 #!/bin/bash
 cd /var/www/html/
-python3 manage.py runserver &
+nohup python3 manage.py runserver & > /dev/null
+exit
